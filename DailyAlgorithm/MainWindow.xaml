@@ -1,0 +1,48 @@
+﻿<Window x:Class="DailyAlgorithm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DailyAlgorithm"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="900">
+    <Grid x:Name="ventana" Background="Black">
+
+        <Image Stretch="UniformToFill"  Margin="3,4,3,-1" Source="/Images/zeroback.jpg" RenderTransformOrigin="0.49,0.491">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.224"/>
+                    <TranslateTransform X="-0.016" Y="0.032"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock HorizontalAlignment="Left" Margin="269,3,0,0" TextWrapping="Wrap" Text="The Daily Algorithm" VerticalAlignment="Top" RenderTransformOrigin="0.66,0.439" Height="61" Width="406" FontSize="40" Foreground="White">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-2.899" AngleY="-0.535"/>
+                    <RotateTransform Angle="-0.373"/>
+                    <TranslateTransform X="-0.87" Y="1.27"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Button x:Name="generador" Content="Click para generar un reto" FontSize="22" Foreground="LightGreen"  Background="black" Margin="289,91,309,394" Click="generador_Click"/>
+        <TextBlock x:Name="contenedor" HorizontalAlignment="Left" Margin="37,212,0,0" TextWrapping="Wrap"  Text=""  VerticalAlignment="Top" Height="316" Width="811" RenderTransformOrigin="0.5,0.5" Background="Black" Foreground="LightGreen">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.444"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+
+
+
+
+
+    </Grid>
+</Window>
